@@ -2,7 +2,7 @@ import re
 
 def load_file(filepath):
     with open(filepath, 'r') as file:
-        return file.read().replace('\n', '')
+        return file.read()
     
 def test_string(input_string):
     return bool(re.search(r'<SELECT.*>', input_string))
